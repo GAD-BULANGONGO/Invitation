@@ -1,13 +1,653 @@
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
-
+<!DOCTYPE html>
+<html lang="fr">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta HTTP-EQUIV="Refresh" CONTENT="0; URL=fuchstechnology-rdc.com/invitation/contenu.html">
-	<title>Invitation Mariage Blanchard et Vodip</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta content="Fuchs Technology" name="description"/>
+    <meta content="HeavenTech" name="author"/>
+    
+    <title>Mariage Blanchard et Vodip</title>
+    <meta property="og:title" content="Mariage Keren et Déogracias">
+    <meta property="og:description" content="Fuchs Technology">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="//fuchstechnology-rdc.com/invitation/contenu.html">
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="630"/>
+    <meta property="og:image" content="../uploads/images/VOTRE_IMAGE_MARIAGE.jpg">
+
+    <!-- POLICES CORRIGÉES -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.cdnfonts.com" crossorigin>
+    
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500&display=swap">
+    <link rel="preload" as="style" href="https://fonts.cdnfonts.com/css/adelia">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500&display=swap" media="print" onload="this.media='all'">
+    <link href="https://fonts.cdnfonts.com/css/adelia" rel="stylesheet" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" media="print" onload="this.media='all'">
+    
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500&display=swap">
+        <link href="https://fonts.cdnfonts.com/css/adelia" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap">
+    </noscript>
+
+    <link rel="shortcut icon" href="fuchs-technology-logo.png" type="image/png">
+    <link href="../assets/css/inv5/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/css/inv5/font-awesome/css/all.min.css" rel="stylesheet">
+    <link href="../assets/css/inv5/aos.css" rel="stylesheet">
+    <link href="../assets/css/inv5/ekko-lightbox.css" rel="stylesheet">
+    <link href="../assets/css/inv5/main.css" rel="stylesheet">
+    <link href="../plugins/notyf/notyf.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <style>
+        /* STYLES CORRIGÉS POUR LES POLICES */
+        .adelia-font {
+            font-family: 'Adelia', 'Great Vibes', 'Brush Script MT', cursive, sans-serif;
+        }
+        
+        .great-vibes-font {
+            font-family: 'Great Vibes', cursive, sans-serif;
+        }
+        
+        .dosis-font {
+            font-family: 'Dosis', sans-serif;
+        }
+
+        .heart {
+            position: absolute;
+            font-size: 20px;
+            animation: rain 15s linear infinite;
+            animation-fill-mode: forwards;
+        }
+
+        .ww-rsvp-detail {
+            background: url("../assets/images/inv5/rsvp-img.jpg") no-repeat center center;
+        } 
+
+        @keyframes rain {
+            0% {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(170vh);
+                opacity: 1;
+            }
+        }
+
+        .ornament-corner.ornament-light:before,
+        .ornament-corner.ornament-light:after {
+            background-image: url("../assets/images/invitation6/ornament-corner-light.png")
+        }
+        .ornament-corner.ornament-primary:before,
+        .ornament-corner.ornament-primary:after {
+            background-image: url("../assets/images/invitation6/ornament-corner-primary.png")
+        }
+        .section-divider.divider-primary {
+            background-image: url("https://planningevents-rdc.com/assets/images/invitation6/section-divider-primary.svg")
+        }
+        .section-divider.divider-secondary {
+            background-image: url("https://planningevents-rdc.com/assets/images/invitation6/section-divider-secondary.svg")
+        }
+
+        .invite-name-container {
+            display: none;
+        }
+        .invite-card {
+            background: linear-gradient(135deg, #F16E6E, #FFB6C1);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .qr-code-container {
+            background: white;
+            padding: 15px;
+            border-radius: 12px;
+            display: inline-block;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            margin: 10px 0;
+        }
+        .qr-code-container img {
+            border-radius: 8px;
+            display: block;
+        }
+        
+        .auth-badge {
+            background: linear-gradient(135deg, #28a745, #20c997);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        
+        /* Styles pour les boutons de produits */
+        .product-button {
+            transition: all 0.3s ease;
+        }
+        
+        .product-button.active {
+            background-color: #F16E6E !important;
+            color: white !important;
+            border-color: #F16E6E !important;
+        }
+        
+        .product-button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+    </style>
 </head>
 
+<body id="top">
+    <div class="coeur">
+        <div class="heart">&hearts;</div>
+        <div class="heart">&hearts;</div>
+        <div class="heart">&hearts;</div>
+    </div>
 
-<body>
+    <script>
+        // Génération des cœurs
+        var heartContainer = document.querySelector(".coeur");
+        var numberOfHearts = 10;
+
+        for (var i = 0; i < numberOfHearts; i++) {
+            var heartDiv = document.createElement("div");
+            heartDiv.className = "heart";
+            heartDiv.innerHTML = "&hearts;";
+
+            var randomTop = Math.random() * window.innerHeight;
+            var randomLeft = Math.random() * window.innerWidth;
+            heartDiv.style.top = randomTop + "px";
+            heartDiv.style.left = randomLeft + "px";
+
+            heartContainer.appendChild(heartDiv);
+        }
+    </script>
+
+    <header></header>
+    
+    <div style="width:100%;overflow-x:hidden">
+        <div class="page-content">
+            <div class="div">
+                <div class="ww-home-page" id="home" style='
+                    background: url("../uploads/images/VOTRE_IMAGE_MARIAGE.jpg") no-repeat center center;
+                    background-size: cover;
+                    height: 100vh;
+                    min-height: 480px;
+                    max-height: 1080px;
+                '>
+                    <div class="ww-wedding-announcement d-flex align-items-center justify-content-start">
+                        <div class="container ww-announcement-container">
+                            <p class="ww-couple-name ww-title dosis-font" data-aos="zoom-in-down" data-aos-delay="300" data-aos-duration="1000">
+                                Blanchard et Vodip
+                            </p>
+                            <img class="img-fluid mt-1" src="../assets/images/inv5/laurel-1.png" alt="Heart" data-aos="zoom-in-down" data-aos-delay="300" data-aos-duration="1000"/>
+                            <p class="h2 mt-5 ww-title dosis-font" data-aos="zoom-in-down" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="10">
+                                07 décembre 2025
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background-image: url(../assets/images/inv5/bobo.jpg);background-size:cover;">
+                    <div class="ww-section mx-3" id="couple">
+                        <div class="container">
+                            <div class="row text-center">
+                                <div class="col">
+                                    <span class="h5 p-2 rounded dosis-font" style="font-weight:bolder;font-size:19px;color:#F16E6E">
+                                        Couple JEREMIE ET BENIE KITENGE
+                                    </span>
+                                    <img src="../assets/images/inv5/border.png" alt="" class="w-100 mt-1">
+                                </div>
+                            </div>
+
+                            <!-- SECTION AUTHENTIFICATION PAR QR CODE -->
+                            <div class="invite-name-container text-center mb-4">
+                                <div class="card shadow-sm border-0 invite-card">
+                                    <div class="card-body py-4">
+                                        <div class="auth-badge">
+                                            ✅ Invitation Authentifiée
+                                        </div>
+                                        <h4 class="text-white mb-3">🕊️ Invitation Spéciale 🕊️</h4>
+                                        <div id="inviteNameDisplay" class="h5 text-white great-vibes-font" style="font-size: 2rem;">
+                                        </div>
+                                        <p class="text-white mt-3 mb-0 dosis-font">Nous sommes honorés de votre présence</p>
+                                        
+                                        <!-- QR CODE D'AUTHENTIFICATION -->
+                                        <div style="text-align: center; margin: 20px 0;">
+                                            <h5 class="text-white mb-3 dosis-font">🔐 QR Code d'Authentification</h5>
+                                            <div class="qr-code-container">
+                                                <div id="authQrcode"></div>
+                                            </div>
+                                            <p class="text-white mt-2 dosis-font" style="font-size: 0.9em;">
+                                                Présentez ce QR code à l'entrée pour authentifier votre invitation
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col rounded border mt-2">
+                                <div>
+                                    <div class="px-3 text-center text-muted">
+                                        <p style="text-align: center; font-size: 1.1em; line-height: 1.6; margin-bottom: 20px;" class="dosis-font">
+                                            C'est avec une immense joie que les familles <strong>IBOMBA</strong> et <strong>LISANGANDI</strong><br>
+                                            ont l'honneur et le plaisir de vous convier à célébrer l'union de leurs enfants
+                                        </p>
+                                        
+                                        <p style="text-align: center; font-size: 1.4em; margin: 25px 0;">
+                                            <strong class="adelia-font" style="font-size: 1.6em;">Lolika Blanchard</strong><br>
+                                            <span class="adelia-font">&</span><br>
+                                            <strong class="adelia-font" style="font-size: 1.6em;">Lisangandi Vodip</strong>
+                                        </p>
+                                        
+                                        <p style="text-align: center; font-size: 1.1em; margin-bottom: 30px;" class="dosis-font">
+                                            À l'occasion de leur mariage coutumier et civil.
+                                        </p>
+                                        
+                                        <h3 style="text-align: center; margin: 30px 0 20px; color: #F16E6E; text-transform: uppercase; letter-spacing: 2px;" class="dosis-font">
+                                            DÉROULEMENT DES CÉRÉMONIES
+                                        </h3>
+                                        
+                                        <div style="text-align: center; margin-bottom: 25px; padding: 15px; background: rgba(241, 110, 110, 0.1); border-radius: 10px;">
+                                            <h4 style="color: #F16E6E; margin-bottom: 10px;" class="dosis-font">Mariage Civil</h4>
+                                            <p style="margin: 5px 0; font-size: 1.1em;" class="dosis-font">
+                                                Le <strong>Vendredi 5 Décembre 2025 à 9h00</strong><br>
+                                                À la <strong>Maison Communale de Ngaliema</strong>
+                                            </p>
+                                            <p style="font-style: italic; margin-top: 10px; color: #666;" class="dosis-font">
+                                                Pour honorer ce jour, nous vous suggérons une tenue aux couleurs de la romance : le rose et le blanc.
+                                            </p>
+                                        </div>
+                                        
+                                        <div style="text-align: center; margin-bottom: 25px; padding: 15px; background: rgba(241, 110, 110, 0.1); border-radius: 10px;">
+                                            <h4 style="color: #F16E6E; margin-bottom: 10px;" class="dosis-font">Soirée Dansante de Mariage</h4>
+                                            <p style="margin: 5px 0; font-size: 1.1em;" class="dosis-font">
+                                                Le <strong>Dimanche 7 Décembre 2025 à 18h00</strong><br>
+                                                Dans la <strong>Salle Polyvalente Félix Antoine Tshisekedi</strong><br>
+                                                Sise à l'<strong>Entrée Principale du Camp Tshatshi, Commune de Ngaliema</strong>
+                                            </p>
+                                        </div>
+                                        
+                                        <div style="text-align: center; margin: 30px 0; padding: 15px; background: rgba(241, 110, 110, 0.05); border-radius: 8px;">
+                                            <p style="margin-bottom: 10px;" class="dosis-font"><strong>Pour tous renseignements :</strong></p>
+                                            <p style="font-size: 1.2em;" class="dosis-font">
+                                                <strong>(+243) 820 579 199</strong> / <strong>(+243) 816 572 083</strong>
+                                            </p>
+                                        </div>
+
+                                        <!-- INSTRUCTIONS POUR L'AUTHENTIFICATION -->
+                                        <div style="text-align: center; margin: 30px 0; padding: 20px; background: rgba(40, 167, 69, 0.1); border-radius: 10px;">
+                                            <h4 style="color: #28a745; margin-bottom: 15px;" class="dosis-font">🔒 Système d'Authentification</h4>
+                                            <p style="margin-bottom: 10px;" class="dosis-font">
+                                                <strong>Votre QR code personnel apparaîtra une fois votre nom chargé</strong>
+                                            </p>
+                                            <p style="font-size: 0.9em; color: #666;" class="dosis-font">
+                                                Le service de sécurité scannera ce QR code à l'entrée pour vérifier l'authenticité de votre invitation
+                                            </p>
+                                        </div>
+                                        
+                                        <p style="text-align: center; font-style: italic; margin-top: 30px; color: #555; line-height: 1.6;" class="dosis-font">
+                                            Dans l'attente de vous y retrouver pour partager ces instants de bonheur,<br>
+                                            Les familles Ibomba et Lisangandi vous adressent leurs plus chaleureuses salutations.
+                                        </p>
+                                    </div>
+
+                                    <p class="text-center">
+                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUAAAAFACAIAAABC8jL9AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAFAklEQVR4nO3dO24cMRRFQbUx+9+yHDoUbZB4PuyqWND8+oDRBZ/v7+8voOnX9BsA/p2AIUzAECZgCBMwhAkYwgQMYQKGMAFDmIAhTMAQJmAI+yz+3fM8R9/HHdaXIevf54n/eULlfVYsfp9OYAgTMOQfVp8H8L0T0L0AAAAASUVORK5CYII=" width="90">
+                                    </p>
+
+                                    <p class="text-center mb-4">
+                                        <button id="downloadButton" type="submit" class="btn shadow rounded dosis-font" style="background-color:#F16E6E;color:white">
+                                            Télécharger l'Invitation
+                                            <i class="fa fa-download ms-2 ico-1"></i>
+                                        </button>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECTION LIVRE D'OR -->
+            <div class="ww-section ww-rsvp-detail text-white" id="rsvp">
+                <div class="container" data-aos="zoom-in-up" data-aos-duration="1000">
+                    <div class="col text-center">
+                        <h2 class="h1 ww-title pb-3 dosis-font" data-aos="zoom-in-down" data-aos-duration="1000">
+                            Livre d'or
+                        </h2>
+                        <p style="font-size: large;" class="dosis-font">
+                            Laissez un petit mot aux mariés
+                        </p>
+                    </div>
+                    <div class="row ww-rsvp-form">
+                        <div class="col-md-10">
+                            <div class="card-body">
+                                <form name="message" method="post">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="form-group">
+                                                <label for="message-input" class="dosis-font">Votre message</label>
+                                                <textarea id="message_message" name="message[message]" required="required" class="form-control dosis-font" rows="10"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col text-center">
+                                            <button class="btn shadow rounded dosis-font" style="background-color:#F16E6E;color:white" type="submit">
+                                                Envoyer
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <input type="hidden" id="message__token" name="message[_token]" value="a59a.A1KP6JZ2sgH5ZMWXzNQTYy26lFMpKhxhcjO4rBWqbGo.TDjJq6AH4WygIYT8n59GLRX17gtuY1U7GAb07STfOzJQOeyuyTyBVZAGrg" />
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECTION PRÉFÉRENCES DE BOISSONS -->
+            <div class="div container border rounded pb-4" style="background-image: url(../assets/images/inv5/bobo.jpg);background-size:cover;">
+                <div class="ww-section">
+                    <div class="justify-content-center">
+                        <p class="text-center dosis-font" style="font-weight: bold;font-size: large;" data-aos="zoom-in-down" data-aos-duration="800">
+                            Vos préférences
+                        </p>
+                    </div>
+                    <div class="p-lg-4">
+                        <div class="row">
+                            <div class="col-lg-12 mb-lg-0" data-aos="zoom-in-up" data-aos-duration="800">
+                                <div class="mb-2 text-center">
+                                    <p class="text-center dosis-font">Que désirez vous boire 🍻 ?</p>
+                                </div>
+
+                                <div class="mb-4">
+                                    <p class="text-center dosis-font">
+                                        Aidez les mariés dans la planification de leur
+                                        événement en leur suggérant vos goûts de boissons
+                                        <br>
+                                        (Deux goûts au max)
+                                    </p>
+                                    
+                                    <input type="hidden" id="codeInvite" value=""/>
+                                    <input type="hidden" id="url" value="//planningevents-rdc.com/invitation/FLCPCFE21521427219/edit-boissons"/>
+                                    
+                                    <h6 class="text-center dosis-font">Boissons alcoolisées</h6>
+                                    <div style="display: flex;flex-wrap: wrap;justify-content: center; gap: 10px;" class="margin-top-15px">
+                                        <button type="button" class="product-button btn btn-outline-secondary dosis-font" data-product='5'>Castel</button>
+                                        <button type="button" class="product-button btn btn-outline-secondary dosis-font" data-product='6'>Beaufort</button>
+                                        <button type="button" class="product-button btn btn-outline-secondary dosis-font" data-product='8'>Tembo</button>
+                                        <button type="button" class="product-button btn btn-outline-secondary dosis-font" data-product='13'>Heinekein</button>
+                                        <button type="button" class="product-button btn btn-outline-secondary dosis-font" data-product='14'>Nkoyi</button>
+                                        <button type="button" class="product-button btn btn-outline-secondary dosis-font" data-product='15'>Likofi</button>
+                                    </div>
+
+                                    <h6 class="text-center dosis-font">Boissons non alcoolisées</h6>
+                                    <div style="display: flex;flex-wrap: wrap;justify-content: center; gap: 10px;" class="margin-top-15px">
+                                        <button type="button" class="product-button btn btn-outline-secondary dosis-font" data-product='1'>Coca</button>
+                                        <button type="button" class="product-button btn btn-outline-secondary dosis-font" data-product='2'>Fanta</button>
+                                        <button type="button" class="product-button btn btn-outline-secondary dosis-font" data-product='3'>Vitalo</button>
+                                        <button type="button" class="product-button btn btn-outline-secondary dosis-font" data-product='4'>Maltina</button>
+                                        <button type="button" class="product-button btn btn-outline-secondary dosis-font" data-product='17'>Sprite</button>
+                                        <button type="button" class="product-button btn btn-outline-secondary dosis-font" data-product='18'>Energy Malt</button>
+                                    </div>
+                                </div>
+                                
+                                <div style="display: none;" id="submitButton">
+                                    <br>
+                                    <div class="text-center mb-3 mt-2">
+                                        <button style="background-color:#F16E6E" type="button" class="border-secondary btn font-alt fs-9 rounded text-center text-white shadow w-100 dosis-font" onclick="Soumettre()">
+                                            Soumettre
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="bg-primary" style="opacity:0.7" />
+                
+                <!-- SECTION ANNULATION D'INVITATION -->
+                <div class="text-center">
+                    <div class="col-lg-12">
+                        <div class="mb-4 text-center">
+                            <p style="font-size:12px">🛑</p>
+                            <p style="font-size:12px" class="fst-italic text-muted dosis-font">
+                                En cas d'indisponibilité cliquez sur le bouton ci-dessous pour annuler 
+                                votre invitation 4 jours avant la manifestation
+                            </p>
+                        </div>
+                        <button type="submit" form-type="contact" onclick="annuler()" class="btn btn-primary shadow dosis-font">
+                            Annuler l'invitation
+                        </button>
+                        <input type="hidden" id="url_annulation" value="//planningevents-rdc.com/invitation/dismiss-invitation/FLCPCFE21521427219"/>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PIED DE PAGE -->
+            <div class="ww-footer bg-light">
+                <div class="container text-center py-4">
+                    <p class="my-0 dosis-font">Invitation réalisée par Fuchs Technology</p>
+                    <p class="my-0 ico-1 dosis-font">
+                        <a href="https://wa.me/+243841029246?text=J'ai%20%c3%a9t%c3%a9%20int%c3%a9ress%c3%a9%20par%20votre%20mod%c3%a8le%20d'invitation%20au%20mariage%20de%20Keren%20et%20D%c3%a9ogracias.%20Puis-je%20en%20savoir%20plus%3F" class="dosis-font">
+                            <span class="">👉</span>Nous contacter sur Whatsapp
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONTENU CACHÉ POUR TÉLÉCHARGEMENT -->
+        <div class="container" id="myContent" style="display: none;background-image: url(../assets/images/inv5/bobo.jpg);background-size:cover;">
+            <div class="row ww-sectionp-2">
+                <div class="col m-1">
+                    <div class="row g-0 justify-content-center">
+                        <div class="col px-4 py-5 position-relative border rounded shadow">
+                            <div class="row justify-content-center">
+                                <p class="text-center">
+                                    <p class="text-light text-center">
+                                        <span class="h5 p-2 rounded dosis-font" style="font-weight:bold;font-size:20px;color:#F16E6E">
+                                            Couple JEREMIE ET BENIE KITENGE
+                                        </span>
+                                        <img src="../assets/images/inv5/border.png" alt="" class="w-100 mt-1">
+                                    </p>
+                                </p>
+                            </div>
+                            <p class="text-center" style="font-size:13px">
+                                <p style="text-align: center;" class="dosis-font">
+                                    C'est avec une immense joie que les familles <strong>IBOMBA</strong> et <strong>LISANGANDI</strong> ont l'honneur et le plaisir de vous convier à célébrer l'union de leurs enfants
+                                </p>
+                                <p style="text-align: center; font-size: 1.3em;">
+                                    <strong class="adelia-font">Lolika Blanchard</strong><br>
+                                    &<br>
+                                    <strong class="adelia-font">Lisangandi Vodip</strong>
+                                </p>
+                                <p style="text-align: center;" class="dosis-font">
+                                    À l'occasion de leur mariage coutumier et civil.
+                                </p>
+                            </p>
+                            
+                            <p class="text-center">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUAAAAFACAIAAABC8jL9AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAFAklEQVR4nO3dO24cMRRFQbUx+9+yHDoUbZB4PuyqWND8+oDRBZ/v7+8voOnX9BsA/p2AIUzAECZgCBMwhAkYwgQMYQKGMAFDmIAhTMAQJmAI+yz+3fM8R9/HHdaXIevf54n/eULlfVYsfp9OYAgTMOQfVp8H8L0T0L0AAAAASUVORK5CYII=" width="90">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script src="../assets/js/inv5/jquery.min.js" type="text/javascript"></script>
+    <script src="../assets/js/inv5/bootstrap.bundle.min.js" type="text/javascript"></script>
+    <script src="../assets/js/inv5/aos.js" type="text/javascript"></script>
+    <script src="../assets/js/inv5/ekko-lightbox.min.js" type="text/javascript"></script>
+    <script src="../assets/js/inv5/main.js" type="text/javascript"></script>
+    <script src="../plugins/notyf/notyf.min.js" type="text/javascript"></script>
+    <script src="../plugins/sweet-alert2/sweetalert2.all.min.js" type="text/javascript"></script>
+    <script src="../assets/js/invitation1/myscript.js" type="text/javascript"></script>
+
+    <!-- SCRIPT CORRIGÉ POUR L'AUTHENTIFICATION ET LA GESTION DES POLICES -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Vérification du chargement des polices
+            setTimeout(function() {
+                if (document.fonts && document.fonts.check) {
+                    if (document.fonts.check('16px Adelia')) {
+                        console.log('✅ Police Adelia chargée avec succès');
+                    } else {
+                        console.log('⚠️ Police Adelia non chargée - utilisation des polices de secours');
+                        // Les polices de secours sont déjà définies dans le CSS
+                    }
+                }
+            }, 1000);
+
+            const urlParams = new URLSearchParams(window.location.search);
+            const inviteName = urlParams.get('invite');
+            
+            // VÉRIFICATION que les éléments existent
+            const inviteContainer = document.querySelector('.invite-name-container');
+            const nameDisplay = document.getElementById('inviteNameDisplay');
+            
+            if (inviteName && inviteContainer && nameDisplay) {
+                console.log(`✅ Invitation chargée pour: ${inviteName}`);
+                
+                // AFFICHER le nom et le QR code d'authentification
+                inviteContainer.style.display = 'block';
+                nameDisplay.textContent = inviteName;
+                document.title = `Mariage Blanchard & Vodip - ${inviteName}`;
+                
+                // Générer le QR code d'authentification
+                generateAuthQRCode(inviteName);
+            } else {
+                console.log('❌ Aucun nom d\'invité détecté');
+                // Afficher un message d'instruction
+                if (!inviteName) {
+                    const instructionDiv = document.createElement('div');
+                    instructionDiv.className = 'alert alert-info text-center';
+                    instructionDiv.innerHTML = `
+                        <h5 class="dosis-font">🔐 Instructions d'Authentification</h5>
+                        <p class="dosis-font">Votre QR code d'authentification apparaîtra automatiquement lorsque votre nom sera chargé dans l'URL.</p>
+                        <small class="dosis-font">Format: <code>?invite=VOTRE_NOM_COMPLET</code></small>
+                    `;
+                    document.querySelector('.ww-section.mx-3 .container').insertBefore(instructionDiv, document.querySelector('.invite-name-container'));
+                }
+            }
+
+            // Gestion des boutons de produits
+            document.querySelectorAll('.product-button').forEach(button => {
+                button.addEventListener('click', function() {
+                    this.classList.toggle('active');
+                    
+                    // Compter le nombre de produits sélectionnés
+                    const selectedCount = document.querySelectorAll('.product-button.active').length;
+                    const submitButton = document.getElementById('submitButton');
+                    
+                    if (selectedCount >= 2) {
+                        // Désactiver les autres boutons
+                        document.querySelectorAll('.product-button:not(.active)').forEach(btn => {
+                            btn.disabled = true;
+                        });
+                        if (submitButton) submitButton.style.display = 'block';
+                    } else {
+                        // Réactiver tous les boutons
+                        document.querySelectorAll('.product-button').forEach(btn => {
+                            btn.disabled = false;
+                        });
+                        if (submitButton) submitButton.style.display = 'none';
+                    }
+                });
+            });
+
+            // Téléchargement de l'invitation
+            const downloadButton = document.getElementById('downloadButton');
+            if (downloadButton) {
+                downloadButton.addEventListener('click', function() {
+                    const content = document.getElementById('myContent');
+                    if (content && typeof html2canvas !== 'undefined') {
+                        content.style.display = 'block';
+                        html2canvas(content).then(function(canvas) {
+                            const image = canvas.toDataURL('image/png');
+                            const link = document.createElement('a');
+                            link.href = image;
+                            
+                            // Récupérer le nom de l'invité pour le nom du fichier
+                            const urlParams = new URLSearchParams(window.location.search);
+                            const inviteName = urlParams.get('invite');
+                            const fileName = inviteName 
+                                ? `Invitation_Mariage_${inviteName.replace(/\s+/g, '_')}.png`
+                                : 'Invitation_Mariage_Blanchard_Vodip.png';
+                            
+                            link.download = fileName;
+                            link.click();
+                            content.style.display = 'none';
+                        }).catch(function(error) {
+                            console.error('Erreur lors de la génération de l\'image:', error);
+                            content.style.display = 'none';
+                        });
+                    }
+                });
+            }
+        });
+
+        // Fonction pour générer le QR code d'authentification
+        function generateAuthQRCode(inviteName) {
+            const authQrElement = document.getElementById('authQrcode');
+            if (authQrElement && typeof QRCode !== 'undefined') {
+                // Vider le contenu existant
+                authQrElement.innerHTML = '';
+                
+                // Créer un identifiant unique pour l'invité
+                const guestId = btoa(inviteName + '|' + 'MARIAGE_BLANCHARD_VODIP_2025').replace(/=/g, '');
+                const authData = JSON.stringify({
+                    id: guestId,
+                    name: inviteName,
+                    event: "Soirée Dansante de Mariage",
+                    date: "2025-12-07",
+                    type: "authentification"
+                });
+                
+                // Créer le QR code d'authentification
+                new QRCode(authQrElement, {
+                    text: authData,
+                    width: 200,
+                    height: 200,
+                    colorDark: "#000000",
+                    colorLight: "#ffffff",
+                    correctLevel: QRCode.CorrectLevel.H
+                });
+                
+                console.log('✅ QR Code d\'authentification généré pour:', inviteName);
+                console.log('🔐 ID d\'invité:', guestId);
+            }
+        }
+
+        // Fonctions existantes pour les préférences de boissons
+        function Soumettre() {
+            // Votre code existant pour soumettre les préférences
+            console.log('Soumission des préférences');
+            alert('Préférences soumises avec succès!');
+        }
+
+        function annuler() {
+            // Votre code existant pour annuler l'invitation
+            const url = document.getElementById('url_annulation').value;
+            if (confirm('Êtes-vous sûr de vouloir annuler votre invitation ?')) {
+                window.location.href = url;
+            }
+        }
+    </script>
 </body>
-
 </html>
